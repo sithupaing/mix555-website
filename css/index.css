@@ -105,6 +105,7 @@ nav{
    outline:none;
    cursor: pointer;
    padding:1px;
+   background-color: rgb(255,255,255); 
 }
 
 .ps_btn_text{

@@ -1,0 +1,193 @@
+*{
+   margin:0;
+   padding:0;
+   font-family: 'Open Sans', sans-serif;
+   box-sizing: border-box;
+}
+
+.container{
+   width: 100vw;
+   min-height: 100vh;
+   background: linear-gradient(to bottom, #0F2341, #0B45A0);
+}
+
+header,main,footer{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+nav{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 70%;
+   height: 100px;
+}
+
+.brand_logo{
+   width: 6rem;
+}
+
+.content{
+   display: flex;
+   width: 65%;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.testimonials{
+   color:white;
+   width: 520px;
+   display: flex;
+   flex-direction: column;
+   padding-top:50px;
+}
+
+.slogan{
+   font-weight: 300;
+   font-size: 60px;
+}
+
+.description{
+   margin-top: 20px;
+   font-weight: 300;
+   font-size: 20px;
+}
+
+.preview_image{
+   width: 350px;
+}
+
+.preview_image img{
+   width: 100%;
+}
+
+.downloads{
+   display: flex;
+   gap: 20px;
+   margin-top: 20px;
+}
+
+.downloads>a{
+   text-decoration: none;
+   width: 150px;
+   height: 55px;
+}
+
+.downloads>a>button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.direct_download_button{
+   width: 100%;
+   height: 100%;
+   color:white;
+   background-color: transparent;
+   border: 1px solid white;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.play_store_button{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   gap: 10px;
+   border-radius: 5px;
+   border:none;
+   outline:none;
+   cursor: pointer;
+   padding:1px;
+}
+
+.ps_btn_text{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.ps_btn_text span:first-child{
+   text-transform: uppercase;
+   color:black;
+   font-weight: 400;
+   font-size: 10px;
+}
+
+.ps_btn_text span:last-child{
+   color:black;
+   font-weight: 600;
+   font-size: 14px;
+}
+
+footer{
+   display: flex;
+   gap:10px;
+   flex-direction: column;
+   color:white;
+   justify-content: center;
+   align-items: center;
+   font-weight: 300;
+   font-size: 16px;
+}
+
+.more_informations{
+   display: flex;
+   gap:20px;
+}
+
+@media screen and (max-width:480px) {
+   *{
+      box-sizing: unset;
+   }
+   nav{
+      width: 90%;
+   }
+   .content{
+      justify-content: center;
+   }
+   .testimonials{
+      text-align: center;
+      width: 380px;
+   }
+   .slogan{
+      font-size: 30px;
+   }
+   .preview_image{
+      width: 300px;
+      margin:30px 0 30px;
+   }
+
+   .more_informations{
+      margin-bottom: 20px;
+   }
+}
+
+@media screen and (min-width:481px) and (max-width:1024px) {
+      *{
+         box-sizing: unset;
+      }
+      nav{
+         width: 80%;
+      }
+      .content{
+         justify-content: center;
+      }
+      .testimonials{
+         text-align: center;
+         width: 380px;
+      }
+      .slogan{
+         font-size: 40px;
+      }
+      .preview_image{
+         width: 300px;
+         margin:30px 0 30px;
+      }
+
+      .more_informations{
+         margin-bottom: 20px;
+      }
+}
